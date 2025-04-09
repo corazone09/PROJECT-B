@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamu Cantik</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/fall.mp3">
+</head>
+<body>
+    <div class="container">
+        <div class="message-container">
+            <h1 id="beautiful-message">Kamu Cantik</h1>
+            <div class="hearts-container"></div>
+        </div>
+
+        <div class="photo-slider">
+            <div class="slider-container">
+                <!-- Images will be inserted by JavaScript -->
+            </div>
+            <div class="slider-controls">
+                <button id="prev-photo"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-photo"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <audio id="background-music" loop>
+                <source src="/assets/fall.mp3" type="audio/mpeg">
+                Browser tidak mendukung audio
+            </audio>
+            <button id="play-music"><i class="fas fa-play"></i></button>
+            <button id="pause-music"><i class="fas fa-pause"></i></button>
+            <div class="volume-control">
+                <button id="decrease-volume"><i class="fas fa-volume-down"></i></button>
+                <button id="increase-volume"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
